@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>TODO CryptoApp</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="assets/styles.css"/>
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <style>
+
+        #buyBox {
+            border: 2px solid rgb(128, 128, 128);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            background-color: #fff; /* Optional: Hintergrundfarbe für die Box */
+            width: 500px;
+            justify-content: space-between; /* Verteilt die inneren Boxen gleichmäßig */
+        }
+
+        #cryptoBox, #walletBox {
+            border: 1px solid grey;
+            padding: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .buyText {
+            font-size: small;
+        }
+
+        .selectBox {
+            width: 195px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="flexbox">
+    <div id="app">
+        <div class="nav-bar"><h3>CryptoApp</h3></div>
+        <app-display :prices="prices" :purchases="purchases" @add-to-wallet="addPurchase"></app-display>
+    </div>
+
+    <br>
+
+    <div id="buyBox">
+        <div id="cryptoBox">
+            <b>Cryptowährung Kaufen:</b>
+            <p class="buyText">Cryptowährung:</p>
+            <select class="selectBox">
+                <!-- Optionen hier -->
+            </select>
+
+            <p class="buyText">Wallet:</p>
+            <select class="selectBox">
+                <!-- Optionen hier -->
+            </select>
+
+            <p class="buyText">Menge:</p>
+            <input type="text" class="selectBox" />
+
+            <p>Wert:</p>
+            <input type="text" class="selectBox" />
+
+            <button>Kaufen</button>
+        </div>
+
+        <div id="walletBox">
+            <b>Wallet: </b>
+
+            noaijfinsodnfisdufosadf
+        </div>
+    </div>
+</div>
+
+
+<!-- Import App -->
+<script src="main.js"></script>
+
+<!-- Import Components -->
+<script src="components/WalletDisplay.js"></script>
+
+<!-- Mount App -->
+<script>
+    const a = app.mount('#app')
+</script>
+</body>
+</html>
